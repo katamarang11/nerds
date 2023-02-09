@@ -1,0 +1,36 @@
+.clients {
+  margin: 48px 42px;
+}
+
+.clients-list {
+  display: flex;
+  column-gap: 45px;
+}
+
+.clients-link:hover g {
+  opacity: 1;
+}
+
+.clients-link:active g {
+  opacity: 0.1;
+}
+
+.clients-link:hover rect {
+  opacity: 1;
+}
+
+.clients-link:active rect {
+  opacity: 0.1;
+}
+
+.special-picture {
+  opacity: 0.2;
+}
+
+.special-picture:hover {
+  opacity: 1;
+}
+
+.special-picture:active {
+  opacity: 0.1;
+}

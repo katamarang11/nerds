@@ -1,0 +1,150 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.pop-up-main {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 960px;
+  max-height: 590px;
+
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  padding: 63px 100px 84px;
+}
+
+.pop-up-title {
+  margin-bottom: 37px;
+
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+}
+
+.title-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.close-btn:hover g path {
+  fill-opacity: 1;
+}
+
+.close-btn:active g path {
+  fill-opacity: 0.1;
+}
+
+.pop-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up-form_box {
+  margin-bottom: 34px;
+
+  display: flex;
+  column-gap: 40px;
+}
+
+.form_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: black;
+}
+
+.form_text {
+  display: inline-block;
+  height: 50px;
+
+  padding: 16px 14px 16px;
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form_text:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.form_text:focus {
+  border: 2px solid #000000;
+}
+
+.label-box {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  row-gap: 9px;
+}
+
+.textarea-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+
+  margin-bottom: 47px;
+}
+
+.textarea-title {
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  padding-top: 16px;
+  padding-left: 16px;
+
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  resize: none;
+  height: 118px;
+}
+
+.textarea-title:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.pop-up-btn {
+  padding: 17px 83px 15px;
+  background-color: #fb565a;
+  border-radius: 3px;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  max-width: 260px;
+}
+
+.pop-up-btn:hover {
+  background: #e74246;
+}
+
+.pop-up-btn:active {
+  background: #d7373b;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.none {
+  display: none;
+}

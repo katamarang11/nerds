@@ -1,0 +1,115 @@
+.companies-wrapper {
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies-info {
+  max-width: 650px;
+}
+
+.companies-info_title {
+  margin-bottom: 32px;
+
+  color: #000000;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.companies-info_text {
+  margin-bottom: 40px;
+
+  color: #283136;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.companies-advantages_list {
+  margin-bottom: 73px;
+}
+
+.companies-advantages_title {
+  margin-bottom: 23px;
+
+  color: #283136;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.advantages_list-text {
+  position: relative;
+
+  margin-bottom: 35px;
+
+  margin-left: 33px;
+
+  color: #283136;
+  font-style: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.advantages_list-text:last-child {
+  margin-bottom: 0;
+}
+
+.advantages_list-text::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -33px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+/* ===================================== */
+
+.statistics-img {
+  margin-bottom: 37px;
+}
+
+.statistics-interest {
+  margin-bottom: 31px;
+
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.statistics-possibilities {
+  display: flex;
+  column-gap: 40px;
+  max-width: 374px;
+}
+
+.possibilities-title {
+  margin-bottom: 10px;
+  position: relative;
+
+  display: inline-block;
+
+  color: #000000;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.possibilities-title::before {
+  position: absolute;
+  content: "%";
+  top: -7px;
+  right: -20px;
+  font-size: 26px;
+}
+
+.possibilities-text {
+  color: #283136;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}

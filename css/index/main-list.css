@@ -1,0 +1,89 @@
+.mein {
+  margin-top: 80px;
+}
+
+.mein-list {
+  display: flex;
+  column-gap: 100px;
+  margin-bottom: 80px;
+}
+
+.mein-list_img {
+  margin-bottom: 25px;
+}
+
+.mein-list_title {
+  margin-bottom: 16px;
+
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.mein-list_text {
+  max-width: 260px;
+
+  margin-bottom: 47px;
+
+  font-size: 16px;
+  color: #283136;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* ================================ mein-list_btn начало ========================== */
+
+.mein-list_btn {
+  max-width: 160px;
+  padding: 17px 40px 15px;
+  border-radius: 3px;
+}
+
+.mein-list_btn1 {
+  background-color: #fb565a;
+  color: white;
+}
+
+.mein-list_btn2 {
+  background-color: #00ca74;
+  color: white;
+}
+
+.mein-list_btn3 {
+  background-color: #efc849;
+  color: white;
+}
+
+.mein-list_btn1:hover {
+  background-color: #e74246;
+}
+
+.mein-list_btn2:hover {
+  background-color: #00bc6c;
+}
+
+.mein-list_btn3:hover {
+  background-color: #eab534;
+}
+
+.mein-list_btn1:active {
+  background: #d7373b;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mein-list_btn2:active {
+  background: #e5a722;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mein-list_btn3:active {
+  background: #00aa62;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ================================ mein-list_btn конец ========================== */
