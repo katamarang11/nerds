@@ -7,48 +7,8 @@ let sliderList = document.querySelector('.slider-list');
 sliderList = sliderList.children;
 
 for (let i = 0; i < sliderControlsBtn.length; i++) {
-
-  setInterval(() => {
-    [...sliderList].map(elem => {
-      return elem.classList.add('non');
-    });
-    sliderList[1].classList.remove('non');
-
-    [...insideTheBtn].map(elem => {
-      return elem.classList.add('none-btn');
-    });
-    insideTheBtn[1].classList.remove('none-btn');
-
-    setTimeout(() => {
-      [...sliderList].map(elem => {
-        return elem.classList.add('non');
-      });
-      sliderList[2].classList.remove('non');
-
-      [...insideTheBtn].map(elem => {
-        return elem.classList.add('none-btn');
-      });
-      insideTheBtn[2].classList.remove('none-btn');
-
-      setTimeout(() => {
-        [...sliderList].map(elem => {
-          return elem.classList.add('non');
-        });
-        sliderList[0].classList.remove('non');
-
-        [...insideTheBtn].map(elem => {
-          return elem.classList.add('none-btn');
-        });
-        insideTheBtn[0].classList.remove('none-btn');
-      }, 4000);
-
-    }, 4000);
-
-  }, 10000);
-
-
-
   sliderControlsBtn[i].addEventListener('click', function () {
+    j = i;
     [...sliderList].map(elem => {
       return elem.classList.add('non');
     });
@@ -60,3 +20,24 @@ for (let i = 0; i < sliderControlsBtn.length; i++) {
     insideTheBtn[i].classList.remove('none-btn');
   });
 }
+
+
+let j = 0;
+const automaticCarousel = () => {
+  if (j === sliderList.length - 1) {
+    sliderList[j].classList.add('non');
+    insideTheBtn[j].classList.add('none-btn');
+    j = 0;
+    sliderList[j].classList.remove('non');
+    insideTheBtn[j].classList.remove('none-btn');
+  } else {
+    sliderList[j].classList.add('non');
+    insideTheBtn[j].classList.add('none-btn');
+
+    sliderList[j + 1].classList.remove('non');
+    insideTheBtn[j + 1].classList.remove('none-btn');
+    j++;
+  }
+}
+
+setInterval(automaticCarousel, 6000);
