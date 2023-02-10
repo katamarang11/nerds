@@ -21,7 +21,6 @@ for (let i = 0; i < sliderControlsBtn.length; i++) {
   });
 }
 
-
 let j = 0;
 const automaticCarousel = () => {
   if (j === sliderList.length - 1) {
@@ -40,4 +39,4 @@ const automaticCarousel = () => {
   }
 }
 
-setInterval(automaticCarousel, 6000);
+setInterval(automaticCarousel, 6000); 

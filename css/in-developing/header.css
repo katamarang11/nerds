@@ -1,0 +1,130 @@
+a {
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.header {
+  height: 250px;
+  padding-top: 49px;
+
+  background-color: #eeeeee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nav-logo:hover path {
+  opacity: 0.7;
+}
+
+.nav-logo:active path {
+  opacity: 0.3;
+}
+
+.nav-menu {
+  display: flex;
+  column-gap: 40px;
+}
+
+.nav-basket {
+  display: flex;
+  column-gap: 25px;
+}
+
+.nav-menu_paragraph {
+  position: relative;
+}
+
+.nav-menu_paragraph:hover {
+  color: #fb565a;
+}
+
+.nav-menu_paragraph:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.nav-menu_paragraph-active::after {
+  content: "";
+  position: absolute;
+  background-color: #fb565a;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -12px;
+}
+
+.nav-basket {
+  position: relative;
+}
+
+.nav-basket_active::after {
+  content: "";
+  position: absolute;
+  background-color: #fb565a;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -12px;
+}
+
+.nav-basket_link:hover {
+  color: #fb565a;
+}
+
+.nav-basket_link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+/* =========================== Прижал футер к низу (начало) =========================== */
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-main {
+  flex: 1 0 auto;
+}
+
+.mein-footer {
+  flex: 0 0 auto;
+}
+
+/* =========================== Прижал футер к низу (конец) =========================== */
+
+.main-main {
+  display: flex;
+  align-items: center;
+}
+
+.information {
+  margin: 0 auto;
+  width: 700px;
+  height: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 42px;
+  font-weight: 700;
+}
