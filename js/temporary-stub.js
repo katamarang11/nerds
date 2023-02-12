@@ -16,6 +16,7 @@ stubWrraperBtn.addEventListener('click', function () {
 
 document.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    temporaryStub.classList.add('none');
+    temporaryStub.classList.add('close-window');
+    setTimeout(() => temporaryStub.classList.add('none'), 1000);
   }
 })
