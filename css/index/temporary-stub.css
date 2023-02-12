@@ -10,6 +10,9 @@
   align-items: center;
 
   z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  animation: zoom 1s forwards;
 }
 
 .stub-wrraper {
@@ -45,6 +48,34 @@
   border-radius: 20px;
 }
 
+.close-window {
+  animation: zoom1 1s forwards;
+}
+
 .none {
   display: none;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
