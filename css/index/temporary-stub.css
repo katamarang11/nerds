@@ -1,0 +1,50 @@
+.temporary-stub {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99;
+}
+
+.stub-wrraper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: 20px;
+
+  padding: 20px 50px 30px;
+  max-width: 960px;
+  max-height: 590px;
+
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.stub-title-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stub-wrraper_btn:hover g path {
+  fill-opacity: 1;
+}
+
+.stub-wrraper_btn:active g path {
+  fill-opacity: 0.1;
+}
+
+.stub-wrraper_img {
+  border-radius: 20px;
+}
+
+.none {
+  display: none;
+}

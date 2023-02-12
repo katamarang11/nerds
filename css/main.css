@@ -8,6 +8,7 @@
 @import "./index/map.css";
 @import "./main-footer.css";
 @import "./index/pop-up.css";
+@import "./index/temporary-stub.css";
 
 body {
   font-family: "Roboto", sans-serif;
